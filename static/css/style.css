@@ -1,0 +1,179 @@
+@import url(//spoqa.github.io/spoqa-han-sans/css/SpoqaHanSans-kr.css);
+
+html {
+    background-color: #f8f9fa!important;
+    -webkit-tap-highlight-color: transparent;
+    color: #0b1b38;
+    font-family: 'Spoqa Han Sans', 'Sans-serif', sans-serif;
+}
+
+body {
+    margin: 0;
+}
+
+.grayscale {
+    filter: invert(1%) sepia(21%) saturate(2500%) hue-rotate(196deg) brightness(52%) contrast(99%);
+}
+
+.container {
+    width: 100%;
+    padding-right: 15px;
+    padding-left: 15px;
+    margin-right: auto;
+    margin-left: auto
+}
+
+@media (min-width: 576px) {
+    .container {
+        max-width: 540px
+    }
+}
+
+@media (min-width: 768px) {
+    .container {
+        max-width: 720px
+    }
+}
+
+@media (min-width: 992px) {
+    .container {
+        max-width: 960px
+    }
+}
+
+@media (min-width: 1200px) {
+    .container {
+        max-width: 1140px
+    }
+}
+
+.container-fluid, .container-lg, .container-md, .container-sm, .container-xl {
+    width: 100%;
+    padding-right: 15px;
+    padding-left: 15px;
+    margin-right: auto;
+    margin-left: auto
+}
+
+@media (min-width: 576px) {
+    .container, .container-sm {
+        max-width: 540px
+    }
+}
+
+@media (min-width: 768px) {
+    .container, .container-md, .container-sm {
+        max-width: 720px
+    }
+}
+
+@media (min-width: 992px) {
+    .container, .container-lg, .container-md, .container-sm {
+        max-width: 960px
+    }
+}
+
+@media (min-width: 1200px) {
+    .container, .container-lg, .container-md, .container-sm, .container-xl {
+        max-width: 1140px
+    }
+}
+
+.section-title {
+    text-decoration: underline;
+}
+
+.section-container {
+    width: 100%;
+    max-width: 1200px;
+    display: flex;
+    -ms-flex-wrap: wrap;
+    flex-wrap: wrap;
+    flex-direction: column;
+    margin-bottom: 3rem;
+}
+
+.content-block {
+    margin-bottom: 1.5rem;
+}
+
+#information {
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    /*box-shadow: 0 15px 30px 0 rgba(212, 216, 229, .3);*/
+    /*padding-bottom: 2.5rem;*/
+}
+
+.information, .career {
+    display: flex;
+    flex-direction: column;
+}
+
+.information-link a {
+    color: white;
+    background-color: #0b1b38;
+    width: fit-content;
+    transition: 0.5s;
+}
+
+.information-link a:visited {
+}
+
+.information-link a:hover {
+    color: #0b1b38;
+    background-color: transparent;
+    width: fit-content;
+    transition: 0.5s;
+}
+
+.career-title {
+    font-size: 1.4rem;
+    font-weight: bold;
+    margin-bottom: 0.20rem;
+}
+
+.career-period, .career-location {
+    color: #868e96;
+}
+
+.skills-card {
+    display: flex;
+    width: 100%;
+}
+
+.skill-image {
+    width: 5rem;
+    height: 5rem;
+    float: left;
+    margin-right: 1rem;
+    filter: invert(1%) sepia(21%) saturate(2500%) hue-rotate(196deg) brightness(52%) contrast(99%);
+    transition: .5s ease;
+    backface-visibility: hidden;
+}
+
+.skill-image:hover {
+    filter: drop-shadow(1px 1px 3.5px rgba(0, 0, 0, 0.25));
+}
+
+.skill-content {
+    display: flex;
+    flex-direction: column;
+    line-height: 1.5;
+    margin-top: -0.5rem;
+}
+
+.skill-title {
+    font-weight: bold;
+    font-size: 1.8rem;
+}
+
+.skill-description {
+    font-size: 0.9rem;
+    width: 100%;
+}
+
+.skill-rate-progress {
+    width: 100%;
+}
+
