@@ -126,13 +126,13 @@ body {
     transition: 0.5s;
 }
 
-.career-title {
+.sub-title {
     font-size: 1.4rem;
     font-weight: bold;
     margin-bottom: 0.20rem;
 }
 
-.career-period, .career-location {
+.sub-gray {
     color: #868e96;
 }
 
@@ -146,9 +146,10 @@ body {
     height: 3rem;
     float: left;
     margin-right: 1rem;
-    filter: invert(1%) sepia(21%) saturate(2500%) hue-rotate(196deg) brightness(52%) contrast(99%);
+    /*filter: invert(1%) sepia(21%) saturate(2500%) hue-rotate(196deg) brightness(52%) contrast(99%);*/
     transition: .5s ease;
     backface-visibility: hidden;
+    filter: drop-shadow(1px 1px 3.5px rgba(0, 0, 0, 0.25));
 }
 
 .skill-image:hover {
@@ -167,7 +168,7 @@ body {
     font-size: 1.8rem;
 }
 
-.skill-description {
+.sub-description {
     font-size: 0.9rem;
     width: fit-content;
     background-color: gainsboro;
