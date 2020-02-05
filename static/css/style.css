@@ -195,3 +195,20 @@ body {
     cursor: pointer;
     padding-right: 1rem;
 }
+
+@media (max-width: 950px) {
+    .project {
+        flex-basis: 51%;
+        position: relative;
+        max-width: 47%;
+        padding-right: 1rem;
+    }
+}
+
+@media (max-width: 400px) {
+    .project {
+        max-width: 100%;
+        flex-basis: 100%;
+        padding-right: unset;
+    }
+}
