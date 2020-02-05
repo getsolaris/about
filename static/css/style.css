@@ -178,3 +178,20 @@ body {
     width: 100%;
 }
 
+.project-wrapper {
+    display: flex;
+    flex-wrap: wrap;
+    width: 100%;
+}
+
+.project {
+    display: flex;
+    -webkit-box-flex: 1;
+    flex-grow: 1;
+    flex-basis: 21%;
+    flex-direction: column;
+    width: 100%;
+    position: relative;
+    cursor: pointer;
+    padding-right: 1rem;
+}
