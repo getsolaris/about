@@ -143,8 +143,8 @@ body {
 }
 
 .skill-image {
-    width: 5rem;
-    height: 5rem;
+    width: 3rem;
+    height: 3rem;
     float: left;
     margin-right: 1rem;
     filter: invert(1%) sepia(21%) saturate(2500%) hue-rotate(196deg) brightness(52%) contrast(99%);
