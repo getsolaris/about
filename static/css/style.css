@@ -169,7 +169,8 @@ body {
 
 .skill-description {
     font-size: 0.9rem;
-    width: 100%;
+    width: fit-content;
+    background-color: gainsboro;
 }
 
 .skill-rate-progress {
