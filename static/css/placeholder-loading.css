@@ -42,50 +42,62 @@
     flex-flow: column;
 }
 
-.ph-row {
+.project-row {
     display: flex;
     flex-wrap: wrap;
     margin-bottom: 7.5px;
 }
 
-.ph-row div {
+.project-row div {
     height: 10px;
     margin-bottom: 7.5px;
     background-color: #ced4da;
 }
 
-.ph-row .big,
-.ph-row.big div {
+.project-row .big,
+.project-row.big div {
     height: 20px;
     margin-bottom: 15px;
 }
 
-.ph-row .empty {
+.project-row .empty {
     background-color: rgba(255, 255, 255, 0);
 }
 
-.ph-col-2 {
+.project-col-2 {
     flex: 0 0 16.66667%;
 }
 
-.ph-col-4 {
+.project-ph-type {
     flex: 0 0 33.33333%;
+    height: 18px;
 }
 
-.ph-col-6 {
+.project-col-6 {
     flex: 0 0 50%;
 }
 
-.ph-col-8 {
+.project-col-8 {
     flex: 0 0 66.66667%;
 }
 
-.ph-col-10 {
+.project-col-10 {
     flex: 0 0 83.33333%;
 }
 
-.ph-col-12 {
+.project-col-12 {
     flex: 0 0 100%;
+}
+
+.project-ph-title {
+    flex: 0 0 100%;
+    height: 22.5px !important;
+    margin-bottom: 5px !important;
+}
+
+.project-ph-sub {
+    height: 15px !important;
+    margin-bottom: 5px !important;
 }
 
 .ph-avatar {
@@ -104,11 +116,11 @@
     padding-top: 100%;
 }
 
-.ph-picture {
+.project-ph-picture {
     width: 100%;
     height: 250px;
     background-color: #ced4da;
-    margin-bottom: 15px;
+    margin-bottom: 10px;
 }
 
 @-webkit-keyframes phAnimation {
