@@ -2,6 +2,11 @@ const BIRTHDAY_YEAR = 2000;
 
 function __init() {
     // years(); disabled
+    _works();
+    _activities();
+    _awards();
+    _educations();
+    _skills();
     _projects();
 }
 
@@ -12,6 +17,111 @@ function years() {
     let year = currentYear - BIRTHDAY_YEAR + ' Years old';
 
     $('#information-years').html(year);
+}
+
+// setup works
+function _works() {
+    let html = '';
+
+    $.getJSON('storage/works.json', function (works) {
+        works.forEach(function (work, i) {
+            if (i >= works.length - 1) html += '<div class="career ">\n';
+            else html += '<div class="career content-block">\n';
+
+            html +=
+            '                <span class="sub-title">' + work.type + '</span>\n' +
+            '                <span class="career-name">' + work.company + '</span>\n' +
+            '                <span class="sub-gray">' + work.period + '</span>\n' +
+            '                <span class="sub-gray">' + work.location + '</span>\n' +
+            '            </div>';
+        });
+
+        $('.works-wrapper').html(html);
+    });
+}
+
+// setup activities
+function _activities() {
+    let html = '';
+
+    $.getJSON('storage/activities.json', function (activities) {
+        activities.forEach(function (activity, i) {
+            if (i >= activities.length - 1) html += '<div class="career ">\n';
+            else html += '<div class="career content-block">\n';
+
+            html +=
+            '                <span class="sub-title">' + activity.title + '</span>\n' +
+            '                <span class="sub-description">' + activity.description + '</span>\n' +
+            '                <span class="career-name">' + activity.which + '</span>\n' +
+            '                <span class="sub-gray">' + activity.period + '</span>\n' +
+            '                <span class="sub-gray">' + activity.location + '</span>\n' +
+            '            </div>';
+        });
+
+        $('.activities-wrapper').html(html);
+    });
+}
+
+// setup awards
+function _awards() {
+    let html = '';
+
+    $.getJSON('storage/awards.json', function (awards) {
+        awards.forEach(function (award, i) {
+            if (i >= awards.length - 1) html += '<div class="career ">\n';
+            else html += '<div class="career content-block">\n';
+
+            html +=
+                '                <span class="sub-title">' + award.title + '</span>\n' +
+                '                <span class="sub-description">' + award.description + '</span>\n' +
+                '                <span class="sub-gray">' + award.period + '</span>\n' +
+                '                <span class="sub-gray">' + award.location + '</span>\n' +
+                '            </div>';
+        });
+
+        $('.awards-wrapper').html(html);
+    });
+}
+
+// setup education
+function _educations() {
+    let html = '';
+
+    $.getJSON('storage/educations.json', function (educations) {
+        educations.forEach(function (education, i) {
+            if (i >= educations.length - 1) html += '<div class="career ">\n';
+            else html += '<div class="career content-block">\n';
+
+            html +=
+                '                <span class="sub-title">' + education.school + '</span>\n' +
+                '                <span class="career-name">' + education.type + '</span>\n' +
+                '                <span class="sub-gray">' + education.period + '</span>\n' +
+                '                <span class="sub-gray">' + education.location + '</span>\n' +
+                '            </div>';
+        });
+
+        $('.educations-wrapper').html(html);
+    });
+}
+
+// setup skills
+function _skills() {
+    let html = '';
+
+    $.getJSON('storage/skills.json', function (skills) {
+        skills.forEach(function (skill) {
+            html +=
+            '<div class="skill-card content-block">\n' +
+            '            <img alt="skill image" class="skill-image" src="static/images/skills/' + skill.title.toLowerCase() + '.png" />\n' +
+            '            <div class="skill-content">\n' +
+            '                <span class="skill-title">' + skill.title + '</span>\n' +
+            '                <span class="sub-description">' + skill.description + '</span>\n' +
+            '            </div>\n' +
+            '        </div>';
+        });
+
+        $('.skills-wrapper').html(html);
+    });
 }
 
 // setup projects
