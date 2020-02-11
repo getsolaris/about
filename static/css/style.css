@@ -193,7 +193,7 @@ body {
     width: 100%;
     position: relative;
     cursor: pointer;
-    padding-right: 1rem;
+    margin-right: 1rem;
 }
 
 @media (max-width: 950px) {
@@ -201,7 +201,7 @@ body {
         flex-basis: 51%;
         position: relative;
         max-width: 47%;
-        padding-right: 1rem;
+        margin-right: 1rem;
     }
 }
 
@@ -209,7 +209,7 @@ body {
     .project {
         max-width: 100%;
         flex-basis: 100%;
-        padding-right: unset;
+        margin-right: unset;
     }
 }
 
