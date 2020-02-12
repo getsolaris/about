@@ -316,3 +316,26 @@ body {
     overflow: hidden;
     display: flex;
 }
+
+.project-overlay {
+    position: absolute;
+    top: 0px;
+    left: 0px;
+    right: 0px;
+    bottom: 0px;
+    height: 320px;
+    background-color: rgba(0, 0, 0, 0.75);
+    display: flex;
+    flex-direction: column;
+    -webkit-box-pack: justify;
+    justify-content: space-between;
+    border-radius: 4px;
+    padding: 1rem;
+}
+
+.project-overlay-content {
+    color: white;
+    font-size: 15px;
+    letter-spacing: -0.5px;
+    line-height: 1.35;
+}
