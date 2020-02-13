@@ -338,4 +338,6 @@ body {
     font-size: 15px;
     letter-spacing: -0.5px;
     line-height: 1.35;
+    white-space: pre-line;
+    width: 100%;
 }
