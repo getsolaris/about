@@ -128,6 +128,7 @@ function _skills() {
 let projectJSON;
 function _projects() {
     let html = '';
+    let important = 0;
     let placeholder =
     '            <div class="project">\n' +
     '                <div class="ph-item">\n' +
@@ -149,7 +150,15 @@ function _projects() {
         projectJSON = projects;
         projects.forEach(function (project, i) {
             html +=
-            '<div class="project" id="project_' + i + '" onclick="project(' + i + ')">\n' +
+            '<div class="project" id="project_' + i + '" onclick="project(' + i + ')"';
+
+            if (project.hasOwnProperty('important')) {
+                important++;
+                html += 'style="flex-basis: 46.1% !important"';
+            }
+
+            html +=
+            '>\n' +
             '                <div class="project-item">\n' +
             '                    <div class="project-col-12">\n' +
             '                        <div class="project-picture" id="project-picture_' + i + '">\n' +
@@ -174,7 +183,7 @@ function _projects() {
             '            </div>';
         });
 
-        if (projectJSON.length % 2 === 1) {
+        if ((projectJSON.length + important) % 2 === 1) {
             html += placeholder;
         }
 

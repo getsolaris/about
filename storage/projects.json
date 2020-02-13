@@ -13,7 +13,9 @@
     "skills": [
       "PHP"
     ],
-    "github": ""
+    "github": "",
+    "important": true,
+    "sort": 1
   },
   {
     "image": "postchain.png",
