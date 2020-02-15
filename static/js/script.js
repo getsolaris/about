@@ -130,7 +130,7 @@ function _projects() {
     let html = '';
     let important = 0;
     let placeholder =
-    '            <div class="project">\n' +
+    '            <div id="project-ph" class="project">\n' +
     '                <div class="ph-item">\n' +
     '                    <div class="project-col-12">\n' +
     '                        <div class="project-ph-picture"></div>\n' +
@@ -212,6 +212,24 @@ function project(idx) {
         $('#project-picture_' + idx).append(overlay);
     }
 }
+
+function projectPlaceholder() {
+    if ($('#project-ph').length) {
+        if ($(window).width() <= 950) {
+            $('#project-ph').css('display', 'none');
+        } else {
+            $('#project-ph').css('display', 'inherit');
+        }
+    }
+}
+
+$(window).on('resize', function () {
+    projectPlaceholder();
+});
+
+$(window).on('load', function () {
+    projectPlaceholder();
+});
 
 $(document).ready(function () {
     __init();
