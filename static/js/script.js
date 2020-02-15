@@ -1,4 +1,5 @@
 const BIRTHDAY_YEAR = 2000;
+const GITHUB_REPO_API = 'http://api.github.com/repos/getsolaris/about';
 
 function __init() {
     // years(); disabled
@@ -8,6 +9,7 @@ function __init() {
     _educations();
     _skills();
     _projects();
+    _footer();
 }
 
 // setup information years
@@ -221,6 +223,27 @@ function projectPlaceholder() {
             $('#project-ph').css('display', 'inherit');
         }
     }
+}
+
+// setup footer
+function _footer() {
+    let date = new Date();
+    let year = date.getFullYear();
+
+    let html = '<span class="sub-title">Copyright &#169; ' + year + ' by Mingeun Kim</span>';
+
+    $('#footer').html(html);
+
+    $.ajax({
+        url: GITHUB_REPO_API,
+        method: 'GET',
+        dataType: 'json',
+        success: function(data) {
+            let updatedAt = new Date(data.updated_at);
+            updatedAt = moment(updatedAt).format('DD. MMM. YYYY');
+            $('#footer').append('<span class="sub-gray">Curriculum Vitae Last Updated on ' + updatedAt + '</span>');
+        }
+    });
 }
 
 $(window).on('resize', function () {
