@@ -234,15 +234,10 @@ function _footer() {
 
     $('#footer').html(html);
 
-    $.ajax({
-        url: GITHUB_REPO_API,
-        method: 'GET',
-        dataType: 'json',
-        success: function(data) {
-            let updatedAt = new Date(data.updated_at);
-            updatedAt = moment(updatedAt).format('DD. MMM. YYYY');
-            $('#footer').append('<span class="sub-gray">Curriculum Vitae Last Updated on ' + updatedAt + '</span>');
-        }
+    $.getJSON(GITHUB_REPO_API, function (data) {
+        let updatedAt = new Date(data.updated_at);
+        updatedAt = moment(updatedAt).format('DD. MMM. YYYY');
+        $('#footer').append('<span class="sub-gray">Curriculum Vitae Last Updated on ' + updatedAt + '</span>');
     });
 }
 
