@@ -1,5 +1,5 @@
 const BIRTHDAY_YEAR = 2000;
-const GITHUB_REPO_API = 'http://api.github.com/repos/getsolaris/about';
+const GITHUB_REPO_API = 'https://api.github.com/repos/getsolaris/about';
 
 function __init() {
     // years(); disabled
