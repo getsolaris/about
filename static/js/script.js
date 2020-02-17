@@ -1,7 +1,8 @@
 const BIRTHDAY_YEAR = 2000;
 const GITHUB_REPO_API = 'https://api.github.com/repos/getsolaris/about';
 let browserLanguage = navigator.language || navigator.userLanguage;
-const BROWSER_LANGUAGE = (browserLanguage === 'ko' ? 'ko' : 'en') + '/';
+// const BROWSER_LANGUAGE = (browserLanguage === 'ko' ? 'ko' : 'en') + '/';
+const BROWSER_LANGUAGE = 'ko/';
 const STORAGE_PATH = 'storage/';
 
 function __init() {
