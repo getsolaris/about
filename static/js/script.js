@@ -1,7 +1,8 @@
 const BIRTHDAY_YEAR = 2000;
 const GITHUB_REPO_API = 'https://api.github.com/repos/getsolaris/about';
-const BROWSER_LANGUAGE = navigator.language || navigator.userLanguage;
-const STORAGE_PATH = 'storage/' + (BROWSER_LANGUAGE === 'ko' ? 'ko' : 'en') + '/';
+let browserLanguage = navigator.language || navigator.userLanguage;
+const BROWSER_LANGUAGE = (browserLanguage === 'ko' ? 'ko' : 'en') + '/';
+const STORAGE_PATH = 'storage/';
 
 function __init() {
     // years(); disabled
@@ -48,7 +49,7 @@ function _works() {
 function _activities() {
     let html = '';
 
-    $.getJSON(STORAGE_PATH + 'activities.json', function (activities) {
+    $.getJSON(STORAGE_PATH + BROWSER_LANGUAGE + 'activities.json', function (activities) {
         activities.forEach(function (activity, i) {
             if (i >= activities.length - 1) html += '<div class="career ">\n';
             else html += '<div class="career content-block">\n';
@@ -70,7 +71,7 @@ function _activities() {
 function _awards() {
     let html = '';
 
-    $.getJSON(STORAGE_PATH + 'awards.json', function (awards) {
+    $.getJSON(STORAGE_PATH + BROWSER_LANGUAGE + 'awards.json', function (awards) {
         awards.forEach(function (award, i) {
             if (i >= awards.length - 1) html += '<div class="career ">\n';
             else html += '<div class="career content-block">\n';
@@ -112,7 +113,7 @@ function _educations() {
 function _skills() {
     let html = '';
 
-    $.getJSON(STORAGE_PATH + 'skills.json', function (skills) {
+    $.getJSON(STORAGE_PATH + BROWSER_LANGUAGE + 'skills.json', function (skills) {
         skills.forEach(function (skill) {
             html +=
             '<div class="skill-card content-block">\n' +
@@ -150,7 +151,7 @@ function _projects() {
     '                </div>\n' +
     '            </div>';
 
-    $.getJSON(STORAGE_PATH + 'projects.json', function (projects) {
+    $.getJSON(STORAGE_PATH + BROWSER_LANGUAGE + 'projects.json', function (projects) {
         projectJSON = projects;
         projects.forEach(function (project, i) {
             html +=
