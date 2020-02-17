@@ -1,5 +1,7 @@
 const BIRTHDAY_YEAR = 2000;
 const GITHUB_REPO_API = 'https://api.github.com/repos/getsolaris/about';
+const BROWSER_LANGUAGE = navigator.language || navigator.userLanguage;
+const STORAGE_PATH = 'storage/' + (BROWSER_LANGUAGE === 'ko' ? 'ko' : 'en') + '/';
 
 function __init() {
     // years(); disabled
@@ -25,7 +27,7 @@ function years() {
 function _works() {
     let html = '';
 
-    $.getJSON('storage/works.json', function (works) {
+    $.getJSON(STORAGE_PATH + 'works.json', function (works) {
         works.forEach(function (work, i) {
             if (i >= works.length - 1) html += '<div class="career ">\n';
             else html += '<div class="career content-block">\n';
@@ -46,7 +48,7 @@ function _works() {
 function _activities() {
     let html = '';
 
-    $.getJSON('storage/activities.json', function (activities) {
+    $.getJSON(STORAGE_PATH + 'activities.json', function (activities) {
         activities.forEach(function (activity, i) {
             if (i >= activities.length - 1) html += '<div class="career ">\n';
             else html += '<div class="career content-block">\n';
@@ -68,7 +70,7 @@ function _activities() {
 function _awards() {
     let html = '';
 
-    $.getJSON('storage/awards.json', function (awards) {
+    $.getJSON(STORAGE_PATH + 'awards.json', function (awards) {
         awards.forEach(function (award, i) {
             if (i >= awards.length - 1) html += '<div class="career ">\n';
             else html += '<div class="career content-block">\n';
@@ -89,7 +91,7 @@ function _awards() {
 function _educations() {
     let html = '';
 
-    $.getJSON('storage/educations.json', function (educations) {
+    $.getJSON(STORAGE_PATH + 'educations.json', function (educations) {
         educations.forEach(function (education, i) {
             if (i >= educations.length - 1) html += '<div class="career ">\n';
             else html += '<div class="career content-block">\n';
@@ -110,7 +112,7 @@ function _educations() {
 function _skills() {
     let html = '';
 
-    $.getJSON('storage/skills.json', function (skills) {
+    $.getJSON(STORAGE_PATH + 'skills.json', function (skills) {
         skills.forEach(function (skill) {
             html +=
             '<div class="skill-card content-block">\n' +
@@ -148,7 +150,7 @@ function _projects() {
     '                </div>\n' +
     '            </div>';
 
-    $.getJSON('storage/projects.json', function (projects) {
+    $.getJSON(STORAGE_PATH + 'projects.json', function (projects) {
         projectJSON = projects;
         projects.forEach(function (project, i) {
             html +=

@@ -1,0 +1,100 @@
+[
+  {
+    "image": "eras.png",
+    "type": "Web",
+    "title": "ANES Perioperative Web database",
+    "which": "Seoul National University Hospital",
+    "period": "12. 2019 - 02. 2020",
+    "description": "서울대학교병원 원내에서 사용되는 웹 데이터베이스 솔루션입니다.\nEnhanced Recovery After Surgery (ERAS) 는 입원전부터 퇴원시까지 환자 전반에 걸친 관리에 대한 모니터링 서비스이고, Preoperative 는 외래에서 수술 전 환자 평가가 가능합니다.\n환자 케이스에 대한 엑셀 일괄 등록/수정은 1000건이 넘는 케이스도 끄떡 없습니다.\n마취통증의학과와 수술과 연구원들이 사용하고 있습니다.",
+    "labels": [
+      "FRONTEND",
+      "BACKEND"
+    ],
+    "skills": [
+      "PHP"
+    ],
+    "github": "",
+    "important": true,
+    "sort": 1
+  },
+  {
+    "image": "postchain.png",
+    "type": "Web",
+    "title": "POSTCHAIN",
+    "which": "제5회 소프트웨어 융합 해커톤",
+    "period": "08. 2018 - 09. 2018",
+    "description": "우편함에 있는 고지서에 적힌 개인정보가 범죄에 악용될 수 있다는 점을 보완하고, 수많은 고지서를 한번에 관리하기 위해 개발하게 되었습니다.\n제5회 소프트웨어 융합 해커톤에 개발 리더로 참가하여 아키텍처, 프론트 그리고 백단을 구성하였습니다.",
+    "labels": [
+      "FRONTEND",
+      "BACKEND"
+    ],
+    "skills": [
+      "Laravel"
+    ],
+    "github": "https://github.com/postchain/5th-korea-sw-fullstack"
+  },
+  {
+    "image": "forte.png",
+    "type": "Backend",
+    "title": "FORTE API",
+    "which": "팀 크레센도",
+    "period": "02. 2019 - (current)",
+    "description": "팀 홈페이지, 결제 대행사(xsolla), 디스코드 봇 사이에서 통용되는 데이터를 통합해 관리하는 API 서버입니다.\nAWS EC2를 이용했고 코드 push 이후 코드 컨벤션 체크 -> 서버 자동배포 인프라를 구축하였습니다.\n팀 크레센도에서 백엔드 개발자로 활동하고 있습니다.",
+    "labels": [
+      "BACKEND"
+    ],
+    "skills": [
+      "Laravel"
+    ],
+    "github": "https://github.com/team-crescendo/laravel-forte"
+  },
+  {
+    "image": "shareyou.png",
+    "type": "Backend",
+    "title": "Share U",
+    "which": "제18회 앱잼 해커톤",
+    "period": "04. 2019 - 04. 2019",
+    "description": "쉐어 유는 살아오면서 많은 경험을 가진 사람들이 젊은 연령층에게 경험을 공유할 수 있는 서비스를 개발 했습니다.\n제18회 앱잼 해커톤에서 서버개발을 담당했습니다.",
+    "labels": [
+      "BACKEND"
+    ],
+    "skills": [
+      "Laravel"
+    ],
+    "github": "https://github.com/share-u/shareu-server"
+  },
+  {
+    "image": "cadit.png",
+    "type": "WebApp",
+    "title": "Cadit",
+    "which": "JunctionX Seoul 2019",
+    "period": "05. 2019 - 05. 2019",
+    "description": "캐딧은 사용자가 일상생활에 소비하는 금액의 일정 퍼센트를 자동으로 저축해주는 서비스입니다.",
+    "labels": [
+      "FRONTEND",
+      "BACKEND"
+    ],
+    "skills": [
+      "Angular",
+      "Laravel"
+    ],
+    "github": "https://github.com/cadit"
+  },
+  {
+    "image": "greta.png",
+    "type": "Web",
+    "title": "Greta",
+    "which": "제5회 KB-KISA 해커톤",
+    "period": "06. 2019 - 06. 2019",
+    "description": "평소 계모임이나 학교 동아리, 학생회, 비영리 단체 등을 보면서 투명하지 못한 회계로 인해 내부 분열이나 횡령의 문제가 발생하고 있습니다.\n사람들은 나름 이러한 문제를 해결하기 위해 투명하게 엑셀이나 구글 시프트를 이용해서 장부를 작성하지만 이 또한 분식회계가 가능하기 때문에 조작이 불가능하면서도 투명한 장부를 작성할 수 있는 서비스를 만들게 되었습니다.",
+    "labels": [
+      "FRONTEND",
+      "BACKEND"
+    ],
+    "skills": [
+      "Angular",
+      "Laravel"
+    ],
+    "github": "https://github.com/greta-develop"
+  }
+]
