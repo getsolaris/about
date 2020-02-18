@@ -1,19 +1,22 @@
 const BIRTHDAY_YEAR = 2000;
 const GITHUB_REPO_API = 'https://api.github.com/repos/getsolaris/about';
 let browserLanguage = navigator.language || navigator.userLanguage;
-// const BROWSER_LANGUAGE = (browserLanguage === 'ko' ? 'ko' : 'en') + '/';
-const BROWSER_LANGUAGE = 'ko/';
+browserLanguage = (browserLanguage.indexOf('ko') > -1 ? 'ko' : 'en') + '/';
 const STORAGE_PATH = 'storage/';
 
 function __init() {
-    // years(); disabled
+    // years(); not display my age(years)
     _works();
+    _educations();
+    _footer();
+}
+
+function __flexible() {
+    languageSelected();
     _activities();
     _awards();
-    _educations();
     _skills();
     _projects();
-    _footer();
 }
 
 // setup information years
@@ -50,7 +53,7 @@ function _works() {
 function _activities() {
     let html = '';
 
-    $.getJSON(STORAGE_PATH + BROWSER_LANGUAGE + 'activities.json', function (activities) {
+    $.getJSON(STORAGE_PATH + browserLanguage + 'activities.json', function (activities) {
         activities.forEach(function (activity, i) {
             if (i >= activities.length - 1) html += '<div class="career ">\n';
             else html += '<div class="career content-block">\n';
@@ -72,7 +75,7 @@ function _activities() {
 function _awards() {
     let html = '';
 
-    $.getJSON(STORAGE_PATH + BROWSER_LANGUAGE + 'awards.json', function (awards) {
+    $.getJSON(STORAGE_PATH + browserLanguage + 'awards.json', function (awards) {
         awards.forEach(function (award, i) {
             if (i >= awards.length - 1) html += '<div class="career ">\n';
             else html += '<div class="career content-block">\n';
@@ -114,7 +117,7 @@ function _educations() {
 function _skills() {
     let html = '';
 
-    $.getJSON(STORAGE_PATH + BROWSER_LANGUAGE + 'skills.json', function (skills) {
+    $.getJSON(STORAGE_PATH + browserLanguage + 'skills.json', function (skills) {
         skills.forEach(function (skill) {
             html +=
             '<div class="skill-card content-block">\n' +
@@ -152,7 +155,7 @@ function _projects() {
     '                </div>\n' +
     '            </div>';
 
-    $.getJSON(STORAGE_PATH + BROWSER_LANGUAGE + 'projects.json', function (projects) {
+    $.getJSON(STORAGE_PATH + browserLanguage + 'projects.json', function (projects) {
         projectJSON = projects;
         projects.forEach(function (project, i) {
             html +=
@@ -219,6 +222,7 @@ function project(idx) {
     }
 }
 
+// project placeholder hide or show function
 function projectPlaceholder() {
     if ($('#project-ph').length) {
         if ($(window).width() <= 950) {
@@ -245,6 +249,26 @@ function _footer() {
     });
 }
 
+/**
+ * default language switch(change) function
+ * if reconnect, setup your browser default language
+  */
+function languageToggle(lang) {
+    if (browserLanguage === lang) return;
+    browserLanguage = lang + '/';
+
+    __flexible(); // reset flexible functions for language
+}
+
+// flexible language add/remove selected function
+function languageSelected() {
+    let lang = browserLanguage.substring(0, 2);
+    if (lang === 'ko') $('#en-lang').removeClass('language-selected');
+    else $('#ko-lang').removeClass('language-selected');
+
+    $('#' + lang + '-lang').addClass('language-selected');
+}
+
 $(window).on('resize', function () {
     projectPlaceholder();
 });
@@ -254,5 +278,6 @@ $(window).on('load', function () {
 });
 
 $(document).ready(function () {
-    __init();
+    __init(); // fixed set functions
+    __flexible(); // flexible functions
 });

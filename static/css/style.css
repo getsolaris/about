@@ -96,10 +96,39 @@ body {
     margin-bottom: 1.5rem;
 }
 
+#language-toggle {
+    position: fixed;
+    right: 55px;
+    width: fit-content;
+    margin-top: 2.5rem;
+    color: #0b1b38;
+    background-color: transparent;
+    transition: 0.5s;
+}
+
+#language-toggle span:hover {
+    background-color: #0b1b38;
+    transition: 0.5s;
+    cursor: pointer;
+    color: white;
+}
+
+@media (max-width: 650px) {
+    #language-toggle {
+        right: 15px;
+    }
+}
+
+.language-selected {
+    background-color: #0b1b38;
+    cursor: pointer;
+    color: white;
+}
+
 #information {
     display: flex;
     flex-direction: column;
-    width: 100%;
+    width: 50%;
     /*box-shadow: 0 15px 30px 0 rgba(212, 216, 229, .3);*/
     /*padding-bottom: 2.5rem;*/
 }
