@@ -97,13 +97,16 @@ body {
 }
 
 #language-toggle {
-    position: fixed;
-    right: 55px;
+    float: right;
     width: fit-content;
     margin-top: 2.5rem;
     color: #0b1b38;
     background-color: transparent;
     transition: 0.5s;
+}
+
+.language-container {
+    position: fixed;
 }
 
 #language-toggle span:hover {
@@ -114,7 +117,7 @@ body {
 }
 
 @media (max-width: 650px) {
-    #language-toggle {
+    .language-container {
         right: 15px;
     }
 }
