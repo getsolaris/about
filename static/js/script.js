@@ -7,6 +7,7 @@ const STORAGE_PATH = 'storage/';
 function __init() {
     // years(); not display my age(years)
     _works();
+    _languages();
     _educations();
     _footer();
 }
@@ -89,6 +90,31 @@ function _awards() {
         });
 
         $('.awards-wrapper').html(html);
+    });
+}
+
+// setup languages
+function _languages() {
+    let html = '';
+
+    $.getJSON(STORAGE_PATH + 'languages.json', function (languages) {
+        languages.forEach(function (language, i) {
+            if (i >= languages.length - 1) html += '<div class="career ">\n';
+            else html += '<div class="career content-block">\n';
+
+
+            html += '<span class="sub-title">' + language.lang + '</span>';
+            html += '<div class="process-bar">';
+
+            if (language.percent > 99)
+                var style = 'border-top-right-radius: 4px; border-bottom-right-radius: 4px;';
+
+            html += '<div class="process" style="width: ' + language.percent + '%;' + style + '"></div>';
+            html += '</div><span class="sub-gray">' + language.level + '</span>\n' +
+                '</div>';
+        });
+
+        $('.languages-wrapper').html(html);
     });
 }
 
