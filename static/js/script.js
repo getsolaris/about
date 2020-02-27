@@ -104,13 +104,13 @@ function _languages() {
 
 
             html += '<span class="sub-title">' + language.lang + '</span>';
-            html += '<div class="process-bar">';
-
-            if (language.percent > 99)
-                var style = 'border-top-right-radius: 4px; border-bottom-right-radius: 4px;';
-
-            html += '<div class="process" style="width: ' + language.percent + '%;' + style + '"></div>';
-            html += '</div><span class="sub-gray">' + language.level + '</span>\n' +
+            // html += '<div class="process-bar">';
+            //
+            // if (language.percent > 99)
+            //     var style = 'border-top-right-radius: 4px; border-bottom-right-radius: 4px;';
+            //
+            // html += '<div class="process" style="width: ' + language.percent + '%;' + style + '"></div></div>';
+            html += '<span class="sub-gray">' + language.level + '</span>\n' +
                 '</div>';
         });
 
