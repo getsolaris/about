@@ -34,6 +34,22 @@
     "github": "https://github.com/postchain/5th-korea-sw-fullstack"
   },
   {
+    "image": "modernpug.png",
+    "type": "Web",
+    "title": "ModernPUG Release",
+    "which": "Korea Modern PHP User Group",
+    "period": "01. 2019 - 02. 2019",
+    "description": "PHP 관련 프레임워크의 릴리즈를 매일 파싱하여 이용자들에게 전달해줍니다.\n슬랙방에도 평일 아침 7시에 릴리즈 안내 메세지를 보냅니다.",
+    "labels": [
+      "FRONTEND",
+      "BACKEND"
+    ],
+    "skills": [
+      "Laravel"
+    ],
+    "github": "https://github.com/ModernPUG/modernpug.org"
+  },
+  {
     "image": "forte.png",
     "type": "Backend",
     "title": "FORTE API",
