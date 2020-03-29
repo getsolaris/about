@@ -31,7 +31,8 @@
     "skills": [
       "Laravel"
     ],
-    "github": "https://github.com/postchain/5th-korea-sw-fullstack"
+    "github": "https://github.com/postchain/5th-korea-sw-fullstack",
+    "important": true
   },
   {
     "image": "modernpug.png",
@@ -47,7 +48,8 @@
     "skills": [
       "Laravel"
     ],
-    "github": "https://github.com/ModernPUG/modernpug.org"
+    "github": "https://github.com/ModernPUG/modernpug.org",
+    "important": true
   },
   {
     "image": "forte.png",
@@ -62,7 +64,8 @@
     "skills": [
       "Laravel"
     ],
-    "github": "https://github.com/team-crescendo/laravel-forte"
+    "github": "https://github.com/team-crescendo/laravel-forte",
+    "important": true
   },
   {
     "image": "shareyou.png",
@@ -111,6 +114,7 @@
       "Angular",
       "Laravel"
     ],
-    "github": "https://github.com/greta-develop"
+    "github": "https://github.com/greta-develop",
+    "important": true
   }
 ]
