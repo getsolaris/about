@@ -68,24 +68,6 @@
     "important": true
   },
   {
-    "image": "greta.png",
-    "type": "Web",
-    "title": "Greta",
-    "which": "제5회 KB-KISA 해커톤",
-    "period": "06. 2019 - 06. 2019",
-    "description": "평소 계모임이나 학교 동아리, 학생회, 비영리 단체 등을 보면서 투명하지 못한 회계로 인해 내부 분열이나 횡령의 문제가 발생하고 있습니다.\n사람들은 나름 이러한 문제를 해결하기 위해 투명하게 엑셀이나 구글 시프트를 이용해서 장부를 작성하지만 이 또한 분식회계가 가능하기 때문에 조작이 불가능하면서도 투명한 장부를 작성할 수 있는 서비스를 만들게 되었습니다.",
-    "labels": [
-      "FRONTEND",
-      "BACKEND"
-    ],
-    "skills": [
-      "Angular",
-      "Laravel"
-    ],
-    "github": "https://github.com/greta-develop",
-    "important": true
-  },
-  {
     "image": "shareyou.png",
     "type": "Backend",
     "title": "Share U",
