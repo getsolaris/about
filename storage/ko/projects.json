@@ -14,7 +14,6 @@
       "PHP"
     ],
     "github": "",
-    "important": true,
     "sort": 1
   },
   {
@@ -32,7 +31,6 @@
       "Laravel"
     ],
     "github": "https://github.com/postchain/5th-korea-sw-fullstack",
-    "important": true
   },
   {
     "image": "modernpug.png",
@@ -49,7 +47,6 @@
       "Laravel"
     ],
     "github": "https://github.com/ModernPUG/modernpug.org",
-    "important": true
   },
   {
     "image": "forte.png",
@@ -65,7 +62,6 @@
       "Laravel"
     ],
     "github": "https://github.com/team-crescendo/laravel-forte",
-    "important": true
   },
   {
     "image": "shareyou.png",
