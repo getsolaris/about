@@ -181,7 +181,7 @@ function _projects() {
     '                </div>\n' +
     '            </div>';
 
-    $.getJSON(STORAGE_PATH + browserLanguage + 'projects.json', function (projects) {
+    $.getJSON(STORAGE_PATH + 'en/projects.json', function (projects) {
         projectJSON = projects;
         projects.forEach(function (project, i) {
             html +=
