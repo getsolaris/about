@@ -97,20 +97,19 @@ body {
     margin-bottom: 1.5rem;
 }
 
-#language-toggle {
+#toggle {
     float: right;
     width: fit-content;
     margin-top: 2.5rem;
-    color: #0b1b38;
     background-color: transparent;
     transition: 0.5s;
 }
 
-.language-container {
+.toggle-container {
     position: fixed;
 }
 
-#language-toggle span:hover {
+#toggle span:hover {
     background-color: #0b1b38;
     transition: 0.5s;
     cursor: pointer;
@@ -118,7 +117,7 @@ body {
 }
 
 @media (max-width: 650px) {
-    .language-container {
+    .toggle-container {
         right: 15px;
     }
 }
@@ -204,7 +203,7 @@ body {
 .sub-description {
     font-size: 0.9rem;
     width: fit-content;
-    background-color: gainsboro;
+    /*background-color: gainsboro;*/
 }
 
 .skill-rate-progress {
@@ -380,7 +379,6 @@ body {
     display: flex;
     flex-direction: column;
     line-height: 1.5rem;
-    margin-bottom: .8rem;
 }
 
 .process-bar {
@@ -407,4 +405,21 @@ body {
     background-image: linear-gradient(45deg, rgba(255, 255, 255, 0.15) 25%, transparent 25%, transparent 50%, rgba(255, 255, 255, 0.15) 50%, rgba(255, 255, 255, 0.15) 75%, transparent 75%, transparent);
     background-size: 1.5rem 1.5rem;
     background-color: rgba(111, 111, 111, 0.5);
+}
+
+[data-theme="dark"] {
+    background-color: #0d1117 !important;
+    color: #c9d1d9 !important;
+}
+
+[data-theme="dark"] .bg-light {
+    background-color: #333 !important;
+}
+
+[data-theme="dark"] .bg-white {
+    background-color: #000 !important;
+}
+
+[data-theme="dark"] .bg-black {
+    background-color: #eee !important;
 }

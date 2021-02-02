@@ -31,10 +31,15 @@
         gtag('config', 'UA-107949613-3');
     </script>
 </head>
-<body>
+<body class="bg-white">
 <div class="container">
-    <div id="language-toggle">
-        <div class="language-container">
+    <div id="toggle">
+        <div class="toggle-container">
+            <div class="custom-control custom-switch">
+                <input type="checkbox" class="custom-control-input" id="darkSwitch" style="display: none"/>
+                <label class="custom-control-label" id="color-toggle-label" for="darkSwitch">Dark Mode</label>
+            </div>
+
             <span id="ko-lang" onclick="languageToggle('ko')">KO</span>
             <span id="en-lang" onclick="languageToggle('en')">EN</span>
         </div>
@@ -79,7 +84,7 @@
 
     <div id="military" class="section-container">
         <h1 class="section-title">Military</h1>
-        <div class=career content-block">
+        <div class="career content-block">
             <span class="sub-title">Republic of Korea Navy</span>
             <span class="sub-gray">08. 2020 - 04. 2022</span>
         </div>
@@ -102,5 +107,6 @@
 <script src="static/js/jquery-3.4.1.min.js"></script>
 <script src="static/js/moment.min.js"></script>
 <script src="static/js/script.js"></script>
+<script src="static/js/dark-mode-switch.js"></script>
 </body>
 </html>
