@@ -4,7 +4,7 @@
     "type": "Web",
     "title": "ANES Perioperative Web database",
     "which": "Seoul National University Hospital",
-    "period": "12. 2019 - 02. 2020",
+    "period": "Dec. 2019 - Feb. 2020",
     "description": "This is a web database solution used on the floor of Seoul National University Hospital.\nEnhanced Recovery After Surgery (ERAS) is a monitoring service for patient-wide care from pre-patient to discharge, and Pre-operative patient evaluation is possible outside the hospital.\nThe Excel batch registration/modification for patient cases does not affect more than 1000 cases.\nIt's used by anesthesiologists and surgeons.",
     "labels": [
       "FRONTEND",
@@ -22,7 +22,7 @@
     "type": "Web",
     "title": "POSTCHAIN",
     "which": "5th Korea S/W Converged Hackathon",
-    "period": "08. 2018 - 09. 2018",
+    "period": "Aug. 2018 - Sep. 2018",
     "description": "It has been developed to make up for the fact that the personal information on the bill in the mailbox can be abused for crime, and to manage a number of bills at once.\nI participated in the 5th Software Convergence Hackathon as a development leader and formed the architecture, front and back columns.",
     "labels": [
       "FRONTEND",
@@ -38,7 +38,7 @@
     "type": "Web",
     "title": "ModernPUG Release",
     "which": "Korea Modern PHP User Group",
-    "period": "01. 2019 - 02. 2019",
+    "period": "Jan. 2019 - Feb. 2019",
     "description": "The release of PHP-related frameworks is parsed daily and communicated to users.\nI also send a release message to the Slack Room at 7 a.m. on weekdays.",
     "labels": [
       "FRONTEND",
@@ -54,7 +54,7 @@
     "type": "Backend",
     "title": "FORTE API",
     "which": "Team Crescendo",
-    "period": "02. 2019 - (current)",
+    "period": "Feb. 2019 ~ current",
     "description": "This is an API server that integrates and manages data that is passed between the team homepage, the payment agent (xsolla), and the decode bot.\nWe used AWS EC2 and built a code convention check - API server automated distribution infrastructure after code push.\nI work as a backend developer in Team Crescendo.",
     "labels": [
       "BACKEND"
@@ -69,7 +69,7 @@
     "type": "Backend",
     "title": "Share U",
     "which": "18th Korea APPJAM Hackathon",
-    "period": "04. 2019 - 04. 2019",
+    "period": "Apr. 2019 - Apr. 2019",
     "description": "Share U, Sheer You has developed a service that allows people with a lot of experience to share their experiences with younger people.\nI was in charge of server development at the 18th App Jam Hackathon.",
     "labels": [
       "BACKEND"
@@ -84,7 +84,7 @@
     "type": "WebApp",
     "title": "Cadit",
     "which": "JunctionX Seoul 2019",
-    "period": "05. 2019 - 05. 2019",
+    "period": "May. 2019 - May. 2019",
     "description": "Cadit are services that automatically save a certain percentage of the amount that users spend on their daily lives.",
     "labels": [
       "FRONTEND",
