@@ -29,6 +29,10 @@ function years() {
     $('#information-years').html(year);
 }
 
+function company_website(url) {
+    window.open(url, '_blank').focus();
+}
+
 // setup works
 function _works() {
     let html = '';
@@ -40,7 +44,11 @@ function _works() {
 
             html +=
             '                <span class="sub-title">' + work.type + '</span>\n' +
-            '                <span class="career-name">' + work.company + '</span>\n' +
+            '                <span class="career-name" onclick="';
+            if (work.hasOwnProperty('company_website')) {
+                html += 'company_website(\'' + work.company_website + '\')';
+            }
+            html += '">' + work.company + '</span>\n' +
             '                <span class="sub-gray">' + work.period + '</span>\n' +
             '                <span class="sub-gray">' + work.location + '</span>\n' +
             '            </div>';

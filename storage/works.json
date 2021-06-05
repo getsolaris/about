@@ -2,12 +2,14 @@
   {
     "type": "Software Engineer",
     "company": "Taggers, Inc.",
+    "company_website": "https://taggers.io",
     "period": "May. 2020 - Jul. 2020",
     "location": "Seoul, Republic of Korea"
   },
   {
     "type": "Research Scientist",
     "company": "Seoul National University Hospital",
+    "company_website": "https://bri.snuh.org",
     "period": "Aug. 2019 - Apr. 2020",
     "location": "Seoul, Republic of Korea"
   },
