@@ -44,9 +44,9 @@ function _works() {
 
             html +=
             '                <span class="sub-title">' + work.type + '</span>\n' +
-            '                <span class="career-name" onclick="';
+            '                <span class="career-name"';
             if (work.hasOwnProperty('company_website')) {
-                html += 'company_website(\'' + work.company_website + '\')';
+                html += 'style="cursor: pointer" onclick="company_website(\'' + work.company_website + '\')';
             }
             html += '">' + work.company + '</span>\n' +
             '                <span class="sub-gray">' + work.period + '</span>\n' +
